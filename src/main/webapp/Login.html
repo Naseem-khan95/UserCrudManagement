@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+
+        @media only screen and (max-width: 600px) {
+            form {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>My Form</h1>
+    <form id="myForm" action="RegisterServlets" method="post">
+        <table>
+            <tr>
+                <td>Enter your First Name:</td>
+                <td><input type="text" name="firstname" placeholder="enter here" required></td>
+            </tr>
+            <tr>
+                <td>Enter your Last Name:</td>
+                <td><input type="text" name="lastname" placeholder="enter here" required></td>
+            </tr>
+            <tr>
+                <td>Enter your Email:</td>
+                <td><input type="email" name="useremail" placeholder="enter here" required></td>
+            </tr>
+             <tr>
+                <td>Enter your Password:</td>
+                <td><input type="password" name="password" placeholder="enter here" required></td>
+            </tr>
+            <tr>
+                <td>Enter your Phone Number:</td>
+                <td><input type="tel" name="phonenumber" placeholder="enter here" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

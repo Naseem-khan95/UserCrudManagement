@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update Form</title>
+<style>
+    body {
+        background-color: #f0f0f0; /* Light grey background for a clean look */
+        font-family: Arial, sans-serif; /* Professional font */
+        color: #333; /* Dark text for readability */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        width: 400px; /* Adjusted width for better form size */
+        border: 1px solid #ddd;
+        border-radius: 8px; /* Rounded corners for a modern look */
+        background-color: #fff; /* White background for the form */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .container h1 {
+        text-align: center; /* Centered heading */
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #4CAF50; /* Green color for the heading */
+    }
+
+    .container table {
+        width: 100%;
+    }
+
+    .container table tr td {
+        padding: 10px 0; /* Padding for spacing */
+    }
+
+    .container table tr td input[type="email"],
+    .container table tr td input[type="password"] {
+        width: 100%; /* Full width inputs */
+        padding: 10px; /* Padding for inputs */
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px; /* Rounded corners for inputs */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    .container table tr td input[type="submit"],
+    .container table tr td input[type="reset"] {
+        width: 100%; /* Full width buttons */
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px; /* Space between buttons */
+        color: #fff; /* White text */
+        background-color: #4CAF50; /* Green background */
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+
+    .container table tr td input[type="submit"]:hover,
+    .container table tr td input[type="reset"]:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Update Form</h1>
+        <form id="updateForm" action="update" method="post">
+            <table>
+                <tr>
+                    <td>Enter your email</td>
+                    <td><input type="email" name="user_email" placeholder="Enter here" required/></td>
+                </tr>
+                <tr>
+                    <td>Enter your new password</td>
+                    <td><input type="password" name="password" placeholder="Enter here" required/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Update">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
